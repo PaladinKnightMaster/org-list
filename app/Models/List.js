@@ -13,17 +13,18 @@ export class List {
 
 
   }
-  // TODO change value of tasks when checked 
+  // TODO ask TA how to style better with bootstrap and what went wrong here.
   get Template() {
     return /*html*/ `
 
-        <div class="card" style="width: 18rem;">
+        <div class="card d-flex justify-content-center " style="width: 18rem;">
   <div class="card-body" style="background-color :${this.color}" >
-  <div class="col-auto d-flex justify-content-end">
-  <i onclick="app.listsController.removeCard('${this.id}')"class="mdi mdi-close selectable " title = "Remove list"></i></div> <h5>${this.uncompletedTasks.length} ${this.Tasks.length}</h5></label>
-    <h5 class="card-title d-flex justify-content-center m-2">${this.name}</h5>
-    <label for="tasks" class="col-form-label">
-   
+   <i onclick="app.listsController.removeCard('${this.id}')"class="mdi mdi-close selectable" title = "Remove list"></i>
+  <div class="col-auto">
+ </div> <label for="tasks" class="col-form-label d-flex justify-content-evenly">
+    <h5 class="card-title  m-2">${this.name} </h5>
+    <p>${this.uncompletedTasks.length} ${this.Tasks.length}</p>
+   </label>
   </div>
   <div class="card-body">
     <div class="row g-3 align-items-center">
