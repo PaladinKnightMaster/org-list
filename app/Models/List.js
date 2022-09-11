@@ -23,7 +23,7 @@ export class List {
   <div class="col-auto">
  </div> <label for="tasks" class="col-form-label d-flex justify-content-evenly">
     <h5 class="card-title  m-2">${this.name} </h5>
-    <p>${this.uncompletedTasks.length} ${this.Tasks.length}</p>
+    <p>${this.uncompletedTasks.length}/${this.Tasks.length}</p>
    </label>
   </div>
   <div class="card-body">
