@@ -17,11 +17,11 @@ export class List {
   get Template() {
     return /*html*/ `
 
-        <div class="card d-flex justify-content-center " style="width: 18rem;">
-  <div class="card-body" style= >
+        <div class="card p-0 d-flex justify-content-center  " style="width: 18rem;">
+  <div class="card-body rounded-top" style="background-color :${this.color}" >
    <i onclick="app.listsController.removeCard('${this.id}')"class="mdi mdi-close selectable" title = "Remove list"></i>
- <label for="tasks" class="col-form-label d-flex flex-nowrap "style="background-color :${this.color}">
-    <h5 class="card-title  m-2">${this.name} </h5>
+ <label for="tasks" class="col-form-label d-flex flex-column flex-nowrap justify-content-center align-items-center text-light text-shadow ">
+    <h5 class="card-title  m-2 text-shadow">${this.name} </h5>
     <p>${this.uncompletedTasks.length}/${this.Tasks.length}</p>
    </label>
   </div>
