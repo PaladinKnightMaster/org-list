@@ -18,10 +18,9 @@ export class List {
     return /*html*/ `
 
         <div class="card d-flex justify-content-center " style="width: 18rem;">
-  <div class="card-body" style="background-color :${this.color}" >
+  <div class="card-body" style= >
    <i onclick="app.listsController.removeCard('${this.id}')"class="mdi mdi-close selectable" title = "Remove list"></i>
-  <div class="col-auto">
- </div> <label for="tasks" class="col-form-label d-flex justify-content-evenly">
+ <label for="tasks" class="col-form-label d-flex flex-nowrap "style="background-color :${this.color}">
     <h5 class="card-title  m-2">${this.name} </h5>
     <p>${this.uncompletedTasks.length}/${this.Tasks.length}</p>
    </label>
