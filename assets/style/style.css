@@ -1,1 +1,22 @@
 /* BASIC STYLES HERE */
+
+
+
+body {
+  background-image: url('https://i.pinimg.com/originals/b3/70/2a/b3702aa6836de0c4ce94912ee43f6f2f.gif');
+  background-position: center;
+  background-size: cover;
+
+}
+
+.navbar {
+  background-color: rgba(124, 89, 24, 0.814);
+}
+
+footer {
+  background-color: rgba(124, 89, 24, 0.814);
+}
+
+.card {
+  background-color: rgba(67, 59, 59, 0.633);
+}

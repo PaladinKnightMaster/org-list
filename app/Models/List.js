@@ -19,7 +19,7 @@ export class List {
 
         <div class="card p-0 d-flex justify-content-center  " style="width: 18rem;">
   <div class="card-body rounded-top" style="background-color :${this.color}" >
-   <i onclick="app.listsController.removeCard('${this.id}')"class="mdi mdi-close selectable" title = "Remove list"></i>
+   <i onclick="app.listsController.removeCard('${this.id}')"class="mdi mdi-close selectable text-danger" title = "Remove list"></i>
  <label for="tasks" class="col-form-label d-flex flex-column flex-nowrap justify-content-center align-items-center text-light text-shadow ">
     <h5 class="card-title  m-2 text-shadow">${this.name} </h5>
     <p>${this.uncompletedTasks.length}/${this.Tasks.length}</p>
@@ -31,7 +31,7 @@ export class List {
         <ul id="tasks"> ${this.TasksTemplate} </ul>
       </div>
       <div class="col-auto d-flex ">
-        <form onsubmit="app.tasksController.createTask('${this.id}')" class="d-flex justify-content-center" ><button class="btn" type="submit"><i class="mdi mdi-plus " title ="add Task"></i></button>
+        <form onsubmit="app.tasksController.createTask('${this.id}')" class="d-flex justify-content-center" ><button class="btn" type="submit"><i class="mdi mdi-plus text-light " title ="add Task"></i></button>
           <input type="text" class="task-input " name="items" placeholder="add task" required minlength="3">
       </div>
       </form>

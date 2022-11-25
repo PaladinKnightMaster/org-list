@@ -16,8 +16,8 @@ export class Task {
     <input onchange=" app.tasksController.taskChecked('${this.id}')" ${this.done ? 'checked' : ''}
       class="form-check-input" type="checkbox" id="tasks">
     <label class="form-check-label" for="items">
-      <span>${this.items}</span>
-      <i onclick="app.tasksController.removeTask('${this.id}')" class="mdi mdi-close selectable"
+      <span class="text-light">${this.items}</span>
+      <i onclick="app.tasksController.removeTask('${this.id}')" class="mdi mdi-close selectable text-danger"
         title="Remove Task's"></i> </p>
     </label>
   </div>
